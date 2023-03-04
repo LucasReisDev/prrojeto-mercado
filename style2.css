@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.product-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-product {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .search input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .delete-product {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: none; 
+  }
+  
+  .modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-container.open {
+    display: block;
+  }
+  
+  .modal {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .form-actions button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .close-modal {
+    background-color: #dc3545;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  .menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-item {
+    padding: 10px;
+  }
+  
+  .menu-item a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .menu-item a:hover {
+    background-color: #ddd;
+  }
+  
+  

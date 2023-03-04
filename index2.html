@@ -1,0 +1,89 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Produtos</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="product-container">
+      <div class="header">
+        <h1>Lista de Produtos</h1>
+        <button class="add-product">Cadastrar Produto</button>
+      </div>
+
+      <div class="search">
+        <input type="text" placeholder="Buscar Produto">
+        <button class="search-button">Buscar</button>
+      </div>
+
+      <div class="menu-container">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a href="">Produtos</a>
+
+          </li>
+          <li class="menu-item">
+            <a href="index3.html">
+              Estoque 
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="">
+              Folha de ponto
+            </a>
+          </li>
+          <li class="menu-item">
+             <a href="">
+              Configurações
+             </a>
+          </li>
+        </ul>
+
+      </div>
+
+      <ul class="product-list"></ul>
+
+      <div class="modal-container">
+        <div class="modal">
+          <h2>Cadastrar Produto</h2>
+          <form class="modal-form">
+            <div class="form-group">
+              <label for="modal-name">Nome do Produto:</label>
+              <input type="text" id="modal-name" name="modal-name" required>
+            </div>
+            <div class="form-group">
+              <label for="modal-category">Categoria:</label>
+              <input type="text" id="modal-category" name="modal-category" required>
+            </div>
+            <div class="form-group">
+              <label for="modal-price">Preço:</label>
+              <input type="number" id="modal-price" name="modal-price" step="0.01" required>
+            </div>
+            <div class="form-group">
+              <label for="modal-quantity">Quantidade:</label>
+              <input type="number" id="modal-quantity" name="modal-quantity" required>
+            </div>
+            <div class="form-actions">
+              <button type="submit">Salvar</button>
+              <button type="button" class="close-modal">Cancelar</button>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
